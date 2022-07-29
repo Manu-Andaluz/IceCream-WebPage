@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 18px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    margin-block: .3rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(160, 160, 160);
+    border: 5px solid white;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(97, 97, 97);
+}
+
+/* Global Css */
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NavBar */
+
+.nav_bar {
+    display: flex;
+    position: relative;
+    height: 12vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.container_links {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
+
+.nav_links a {
+    color: black;
+    border-bottom: 2px color solid transparent;
+}
+
+.nav_links a:hover {
+    transition: .3s ease;
+    border-bottom-color: black;
+}
+
+.container_links_2 {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
+
+/* Home */
+
+.home {
+    height: 100vh;
+    background-image: url(images/minha-baek-twcxhttY4Lw-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+/* Front Page */
+
+.container_front_page {
+    color: black;
+    height: 80vh;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    background-color: rgba(248, 185, 195, 0.288);
+    border-top-left-radius: 250px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 250px;
+    border-bottom-left-radius: 100px;
+
+}
+
+.container_front_page img {
+    width: 50%;
+    margin: 0 auto;
+    border-top-left-radius: 250px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 250px;
+    border-bottom-left-radius: 100px;
+    padding: 5rem;
+}
+
+.front_page {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.container_front_page h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.btn_1 {
+    padding: 1rem 5rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10rem;
+    cursor: pointer;
+}
+
+.btn_1:hover {
+    background-color: rgb(34, 34, 34);
+    transition: .2s ease-in;
+}
+
+.front_page .btn_1 {
+    margin-top: 1rem;
+}
+
+/* Card */
+.cards {
+    margin: 5rem 0;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-card {
+    max-width: 320px;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container-card:hover {
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.container-card img {
+    max-width: 100%;
+}
+
+.card-content {
+    text-align: center;
+    padding: 1rem;
+}
+
+.card-content h3 {
+    margin: 1rem 0;
+}
+
+.btn_2 {
+    font-size: 1rem;
+    padding: 1rem 0;
+    width: 90%;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.btn_2:hover {
+    background-color: #181818;
+}
+
+.btn_2:hover span {
+    margin-left: 0.5rem;
+    transition: 0.2s;
+}
+
+/* Image 1 */
+
+.information_1 {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background-color: rgba(224, 224, 255, 0.37);
+    padding: 8rem;
+    margin: 5rem 0;
+}
+
+.inform_content {
+    display: grid;
+    gap: 2rem;
+}
+
+.inform_content h3 {
+    font-size: 1.5rem;
+}
+
+.inform_content p {
+    font-size: 1.1rem;
+}
+
+.images_1 {
+    margin: 5rem 0;
+    width: 100%;
+}
+
+.information_1 img {
+    width: 600px;
+    margin: 0 auto;
+    border-top-left-radius: 250px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 250px;
+    border-bottom-left-radius: 100px;
+}
