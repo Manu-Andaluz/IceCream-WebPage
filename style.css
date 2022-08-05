@@ -68,6 +68,23 @@ a {
     border-bottom-color: black;
 }
 
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: grey;
+    margin: 5px;
+    transition: all 0.25s ease-in-out;
+}
+
+.nav-avtive {
+    opacity: 1;
+}
+
 /* Front Page */
 
 .container_front_page {
@@ -257,8 +274,10 @@ footer {
 }
 
 @media (max-width:1150px) {
+
+    /* Front Page */
     .container_front_page {
-        background-image: url(images/courtney-cook-SAh6q_MNuN0-unsplash.jpg);
+        background-image: url(images/tazas.jpg);
         background-size: cover;
     }
 
@@ -273,12 +292,44 @@ footer {
 
 @media (max-width:1000px) {
 
+    /* NavBar */
+    .burger {
+        display: inline-block;
+        transition: .5s;
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+
+
     .nav_bar {
-        justify-content: center;
+        justify-content: space-around;
     }
 
     .container_links {
-        display: none;
+        opacity: 0;
+        position: absolute;
+        display: grid;
+        padding-top: 5rem;
+        text-align: center;
+        background-color: rgb(219, 219, 219);
+        top: 12vh;
+        height: 88vh;
+        width: 100%;
+    }
+
+    .nav-active {
+        opacity: 1;
+        transition: .2s;
     }
 
 }
@@ -287,6 +338,7 @@ footer {
 
     .container_front_page {
         border-radius: 1rem;
+        background-position: right;
     }
 
     .front_page h1 {
