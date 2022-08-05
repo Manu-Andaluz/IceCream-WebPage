@@ -60,28 +60,12 @@ a {
 
 .nav_links a {
     color: black;
-    border-bottom: 2px color solid transparent;
+    border-bottom: 2px solid transparent;
 }
 
 .nav_links a:hover {
-    transition: .3s ease;
+    transition: .5s ease;
     border-bottom-color: black;
-}
-
-.container_links_2 {
-    display: flex;
-    width: 20%;
-    justify-content: space-around;
-}
-
-/* Home */
-
-.home {
-    height: 100vh;
-    background-image: url(images/minha-baek-twcxhttY4Lw-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-
 }
 
 /* Front Page */
@@ -272,15 +256,10 @@ footer {
     }
 }
 
-@media (max-width:1000px) {
-
-    .nav_bar {
-        justify-content: center;
-    }
-
-    .container_links,
-    .container_links_2 {
-        display: none;
+@media (max-width:1150px) {
+    .container_front_page {
+        background-image: url(images/courtney-cook-SAh6q_MNuN0-unsplash.jpg);
+        background-size: cover;
     }
 
     .container_front_page img {
@@ -290,5 +269,44 @@ footer {
     .front_page h1 {
         font-size: 2rem;
     }
+}
 
+@media (max-width:1000px) {
+
+    .nav_bar {
+        justify-content: center;
+    }
+
+    .container_links {
+        display: none;
+    }
+
+}
+
+@media (max-width:750px) {
+
+    .container_front_page {
+        border-radius: 1rem;
+    }
+
+    .front_page h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:650px) {
+    .information_1 {
+        padding: 7rem 2rem;
+    }
+
+    .inform_content {
+        width: 100%;
+    }
+}
+
+@media (max-width:542px) {
+    .flex_footer {
+        display: grid;
+        gap: 1rem;
+    }
 }
