@@ -1,3 +1,5 @@
 # IceCream-WebPage
 
-This is a simple Web Page project to practice front-end and build a portfolio.(It's not finished)
+This is a project to practice some Front-End. (It is not finished)
+
+Este es un proyecto para practicar un poco de Front-End. (No está terminado)
